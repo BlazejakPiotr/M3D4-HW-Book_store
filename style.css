@@ -1,0 +1,16 @@
+nav i {
+  margin-right: 1rem;
+}
+
+.navbar-brand:hover {
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body a {
+  margin-bottom: 0.5rem;
+}
