@@ -16,8 +16,25 @@
     <title>Books4You.com - Online book store - Strive Shool Homework</title>
   </head>
   <body>
+    <nav class="navbar navbar-light bg-light sticky-top">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" data-bs-toggle="modal" data-bs-target="#cart"
+          ><i class="fas fa-shopping-cart"></i>Your Shopping Cart</a
+        >
+
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
     <div class="container">
-      <div class="row"></div>
+      <div class="row pt-4"></div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -25,5 +42,45 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4090a32c63.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      aria-labelledby="cartLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartLabel">Your shopping cart</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-danger">Clear cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
