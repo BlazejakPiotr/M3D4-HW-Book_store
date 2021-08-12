@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Books4You.com - Online book store - Strive Shool Homework</title>
+    <title>Books4You.com - Online book store - Strive School Homework</title>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light sticky-top">
@@ -28,6 +28,7 @@
             type="search"
             placeholder="Search"
             aria-label="Search"
+            onchange="searchBooks(this.value)"
           />
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
@@ -68,7 +69,9 @@
             ></button>
           </div>
           <!-- Modal body -->
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+            <div class="container"><div class="row modal-body-row"></div></div>
+          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -77,7 +80,9 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-danger">Clear cart</button>
+            <button onclick="clearCart()" type="button" class="btn btn-danger">
+              Clear cart
+            </button>
           </div>
         </div>
       </div>
